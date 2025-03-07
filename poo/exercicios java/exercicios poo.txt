@@ -474,15 +474,5 @@ String input = scanner.next();
 
 
 
-
-
-VOGAIS++;
-digitos++;
-
-if (caracteres == a, e, i, o, u)
- System.out.println("Quantidade de vogais: " + VOGAIS);
- 
-if(caracteres == digitos)
- System.out.println("Quantidade de digitos: " + digitos);
  
 
