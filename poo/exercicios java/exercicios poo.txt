@@ -1,0 +1,488 @@
+// EXERCICIO 1
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        Scanner scanner = new Scanner(System.in);
+           System.out.print("Digite o valor  da primeira variavel: ");
+           int n = scanner.nextint();
+           System.out.print("Digite o valor  da primeira variavel: ");
+           int m = scanner.nextint();
+
+        int soma = n + m;
+        int subtracao = n - m;
+        int multiplicacao = m * n;
+        double divisao = (double) n / m; 
+       
+
+        System.out.println("Soma: " + soma);
+        System.out.println("Subtração: " + subtracao);
+        System.out.println("Multiplicação: " + multiplicacao);
+        System.out.println("Divisão: " + divisao);
+
+        scanner.close();
+    }
+}
+
+
+// EXERCICIO 2 
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        Scanner scanner = new Scanner(System.in);
+           System.out.print("Digite o valor  da primeira variavel: ");
+           double n = scanner.nextint();
+           System.out.print("Digite o valor  da primeira variavel: ");
+           double m = scanner.nextint();
+
+        double soma = n + m;
+        double subtracao = n - m;
+        double multiplicacao = m * n;
+        double divisao = (double) n / m; 
+       
+
+        System.out.println("Soma: " + soma);
+        System.out.println("Subtração: " + subtracao);
+        System.out.println("Multiplicação: " + multiplicacao);
+        System.out.println("Divisão: " + divisao);
+
+        scanner.close();
+    }
+}
+
+// EXERCICIO 3
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Digite o salario: ");
+        double s = scanner.nextInt();
+        System.out.print("Digite o percentual de aumento: ");
+        double p = scanner.nextInt();
+
+        double novo_salario = s * (1 + p / 100);
+
+        System.out.println("o novo salário é : " + novo_salario);
+
+
+        scanner.close();
+    }
+}
+
+// EXERCICIO 4
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("digite o raio do circulo : ");
+        double r = scanner.nextInt();
+
+        double perimetro_circulo = 2 * Math.PI * r;
+
+        double area_circulo =  Math.PI * Math.pow(r, 2);
+
+        System.out.println("o perimetro é : " + perimetro_circulo + " ao quadrado ");
+        System.out.println("a área é : " + area_circulo);
+
+          scanner.close();
+    }
+}
+
+
+// EXERCICIO 5
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        Scanner scanner = new Scanner(System.in);
+
+
+        System.out.print("Digite o valor de t (em segundos): ");
+        int t = scanner.nextInt();
+
+
+        int horas = (t / 3600);
+        int minutos =(t % 3600) / 60;
+        int segundos = t % 60;
+
+
+        System.out.println("O tempo é: " + horas + " horas, " + minutos + " minutos e " + segundos + " segundos.");
+
+
+        scanner.close();
+    }
+}
+
+
+// EXERCICIO 6 
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Digite a distância percorrida (em km): ");
+        int d = scanner.nextInt();
+        System.out.print("Digite a quantidade de gasolina (em l): ");
+        int q = scanner.nextInt();
+        System.out.print("Digite o tempo gasto (em h): ");
+        int t = scanner.nextInt();
+
+
+        int velocidade_media = d % t ;
+        int consumo_de_combustivel = d % q;
+
+
+
+        System.out.println("a velocidade média é: " + velocidade_media + " km/h,");
+        System.out.println("o consumo de combustivel é : " + consumo_de_combustivel + " KM/ L") ;
+
+
+
+        scanner.close();
+    }
+}
+
+// EXERCICIO 7 
+ 
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Digite seu numero: ");
+        int n = scanner.nextInt();
+
+
+        if (n % 2 == 0) {
+            System.out.println("O número é par");
+        } else {
+            System.out.println("O número é ímpar");
+        }
+        scanner.close();
+    }
+}
+
+// EXERCICIO 8
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Digite o consumo de kilowatts (kW): ");
+        double consumo = scanner.nextDouble();
+        System.out.print("Digite o valor do kilowatt: ");
+        double valorKw = scanner.nextDouble();
+
+        double valor_a_ser_pago = consumo * valorKw;
+
+
+        if (consumo < 150 ) {
+            valor_a_ser_pago = valor_a_ser_pago * 0.90;
+            System.out.println("O novo valor a ser pago é:" + valor_a_ser_pago);
+        }else {
+            System.out.println("valor a ser pago" + valor_a_ser_pago);
+        }
+            scanner.close();
+        }
+    }
+
+// EXERCICIO 9
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Digite um número real: ");
+        double x = scanner.nextDouble();
+
+        double parteDecimal = x - (int)x;
+
+        if (parteDecimal < 0.5) {
+            System.out.println("O valor arredondado é: " + (int)x);
+        } else {
+            System.out.println("O valor arredondado é: " + ((int)x + 1));
+        }
+
+        scanner.close();
+    }
+}
+
+// EXERCICIO 10 
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Digite o número n: ");
+        int n = scanner.nextInt();
+
+        System.out.print("Digite o limite inferior do intervalo: ");
+        int inferior = scanner.nextInt();
+
+        System.out.print("Digite o limite superior do intervalo: ");
+        int superior = scanner.nextInt();
+
+        if (n < inferior) {
+            System.out.println("O número " + n + " está antes do intervalo.");
+        } else if (n > superior) {
+            System.out.println("O número " + n + " está depois do intervalo.");
+        } else {
+            System.out.println("O número " + n + " está dentro do intervalo.");
+        }
+
+        scanner.close();
+    }
+}
+
+
+
+// EXERCICIO 11
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+
+        char op = sc.next().charAt(0);
+        double a = sc.nextDouble();
+        double b = sc.nextDouble();
+        
+        double resultado = 0;
+        boolean operacaoValida = true;
+        
+       
+        switch (op) {
+            case '+':
+                resultado = a + b;
+                break;
+            case '-':
+                resultado = a - b;
+                break;
+            case '*':
+                resultado = a * b;
+                break;
+            case '/':
+                if (b != 0) {
+                    resultado = a / b;
+                } else {
+                    operacaoValida = false;
+                    System.out.println("Erro: Divisão por zero");
+                }
+                break;
+            default:
+                operacaoValida = false;
+                System.out.println("Operação inválida");
+                break;
+        }
+        if (operacaoValida) {
+            System.out.printf("%.1f %c %.1f = %.1f%n", a, op, b, resultado);
+        }
+        
+        sc.close();
+    }
+}
+
+
+// EXERCICIO 12
+
+import java.util.Scanner;
+
+public class Main {
+       public static void main(String[] args) {
+          Scanner scanner = new Scanner(System.in);	
+
+        int a = sc.nextInt();
+        int b = sc.nextInt();
+
+          if (a > b) {
+            int temp = a;
+            a = b;
+            b = temp;
+        }
+     System.out.print("Pares: ");
+        for (int i = a; i <= b; i++) {
+            if (i % 2 == 0) {
+                System.out.print(i + " ");
+            }
+        }
+        System.out.println();
+    int soma = a + b;
+        double media = (a + b) / 2.0;
+ 
+
+        System.out.println("Soma: " + soma);
+        System.out.println("Média: " + media);
+        
+        sc.close();
+    }
+}
+
+
+// EXERCICIO 13
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+ 
+        System.out.print("Digite o número de alunos: ");
+        int n = scanner.nextInt();
+
+        double somaNotas = 0;
+
+        for (int i = 1; i <= n; i++) {
+            System.out.print("Digite a nota do aluno " + i + ": ");
+            double nota = scanner.nextDouble();
+            somaNotas += nota; 
+        }
+
+        double mediaTurma = somaNotas / n;
+
+        System.out.println("A média da turma é: " + mediaTurma);
+
+        scanner.close();
+ }
+}
+
+
+//EXERCICIO 14
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        
+        double somaNotas = 0;
+        double maiorNota = Double.MIN_VALUE; 
+        double menorNota = Double.MAX_VALUE; 
+        int numeroAlunos = 0;
+
+        while (true) {
+            System.out.print("Digite a nota do aluno (ou -1 para encerrar): ");
+            double nota = scanner.nextDouble();
+            
+            if (nota == -1) {
+                break; 
+            }
+                      
+            somaNotas += nota;
+            numeroAlunos++; 
+
+            if (nota > maiorNota) {
+                maiorNota = nota; 
+            }
+
+            if (nota < menorNota) {
+                menorNota = nota; 
+            }
+        }
+
+        
+        if (numeroAlunos > 0) {
+     
+            double mediaTurma = somaNotas / numeroAlunos;
+
+            System.out.println("Quantidade de alunos: " + numeroAlunos);
+            System.out.println("Média da turma: " + mediaTurma);
+            System.out.println("Maior nota: " + maiorNota);
+            System.out.println("Menor nota: " + menorNota);
+        } else {
+            System.out.println("Nenhuma nota foi inserida.");
+        }
+
+        scanner.close(); 
+    }
+}
+
+
+// EXERCICIO 15
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int VOGAIS = 0;
+        int digitos = 0;
+        int outros = 0;
+
+  while (true) {
+            System.out.print("Digite a quantidade de caracteres (ou . para encerrar): ");
+String input = scanner.next(); 
+   if (input.equals(".")) {
+                break; 
+            }
+ char caractere = input.charAt(0);
+ if ("aeiouAEIOU".indexOf(caractere) != -1) {
+                vogais++;
+            }          
+            else if (Character.isDigit(caractere)) {
+                digitos++;
+            }
+            else {
+                outros++;
+            }
+        }
+        System.out.println("Quantidade de vogais: " + vogais);
+        System.out.println("Quantidade de dígitos: " + digitos);
+        System.out.println("Quantidade de outros caracteres: " + outros);
+
+        scanner.close();  
+    }
+}
+
+
+
+
+
+VOGAIS++;
+digitos++;
+
+if (caracteres == a, e, i, o, u)
+ System.out.println("Quantidade de vogais: " + VOGAIS);
+ 
+if(caracteres == digitos)
+ System.out.println("Quantidade de digitos: " + digitos);
+ 
+
